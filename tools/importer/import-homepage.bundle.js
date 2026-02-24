@@ -118,30 +118,32 @@ var CustomImportScript = (() => {
         titleFrag.appendChild(document.createTextNode(titleText));
       }
       const contentFrag = document.createDocumentFragment();
-      const paneImage = pane.querySelector("img.cover-image, img");
-      if (paneImage) {
-        contentFrag.appendChild(document.createComment(" field:content_image "));
-        contentFrag.appendChild(paneImage);
-      }
       const nameDiv = pane.querySelector(".paragraph-xl strong, strong");
-      const roleDiv = pane.querySelector(".paragraph-xl + div, .paragraph-xl ~ div:not(.paragraph-xl)");
       const nameText = nameDiv ? nameDiv.textContent.trim() : "";
-      const roleText = roleDiv && !roleDiv.querySelector("strong") ? roleDiv.textContent.trim() : "";
       if (nameText) {
         contentFrag.appendChild(document.createComment(" field:content_heading "));
         const h3 = document.createElement("h3");
         h3.textContent = nameText;
         contentFrag.appendChild(h3);
+      }
+      const paneImage = pane.querySelector("img.cover-image, img");
+      if (paneImage) {
+        contentFrag.appendChild(document.createComment(" field:content_image "));
+        contentFrag.appendChild(paneImage);
+      }
+      const roleDiv = pane.querySelector(".paragraph-xl + div, .paragraph-xl ~ div:not(.paragraph-xl)");
+      const roleText = roleDiv && !roleDiv.querySelector("strong") ? roleDiv.textContent.trim() : "";
+      const quote = pane.querySelector("p.paragraph-xl");
+      if (roleText || quote) {
+        contentFrag.appendChild(document.createComment(" field:content_richtext "));
         if (roleText) {
           const roleP = document.createElement("p");
           roleP.textContent = roleText;
           contentFrag.appendChild(roleP);
         }
-      }
-      const quote = pane.querySelector("p.paragraph-xl");
-      if (quote) {
-        contentFrag.appendChild(document.createComment(" field:content_richtext "));
-        contentFrag.appendChild(quote);
+        if (quote) {
+          contentFrag.appendChild(quote);
+        }
       }
       cells.push([titleFrag, contentFrag]);
     });

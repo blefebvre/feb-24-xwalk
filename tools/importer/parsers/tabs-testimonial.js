@@ -8,7 +8,7 @@
  * Model: container with tabs-testimonial-item children.
  * Item fields: title (text), content_heading (text), content_headingType (collapsed),
  *   content_image (reference), content_richtext (richtext)
- * Grouped: content_* fields in one cell. title in separate cell.
+ * Grouped: content_* fields in one cell; title in separate cell.
  */
 export default function parse(element, { document }) {
   // Tab panes contain the panel content
@@ -30,8 +30,20 @@ export default function parse(element, { document }) {
       titleFrag.appendChild(document.createTextNode(titleText));
     }
 
-    // Column 2: grouped content_* fields
+    // Column 2: grouped content_* fields — order must match model:
+    // content_heading (text), content_headingType (collapsed/skipped),
+    // content_image (reference), content_richtext (richtext)
     const contentFrag = document.createDocumentFragment();
+
+    // content_heading: person name (plain text field — no extra paragraphs)
+    const nameDiv = pane.querySelector('.paragraph-xl strong, strong');
+    const nameText = nameDiv ? nameDiv.textContent.trim() : '';
+    if (nameText) {
+      contentFrag.appendChild(document.createComment(' field:content_heading '));
+      const h3 = document.createElement('h3');
+      h3.textContent = nameText;
+      contentFrag.appendChild(h3);
+    }
 
     // content_image: person image from tab pane
     const paneImage = pane.querySelector('img.cover-image, img');
@@ -40,29 +52,20 @@ export default function parse(element, { document }) {
       contentFrag.appendChild(paneImage);
     }
 
-    // content_heading: person name and role as heading
-    const nameDiv = pane.querySelector('.paragraph-xl strong, strong');
+    // content_richtext: role text + testimonial quote
     const roleDiv = pane.querySelector('.paragraph-xl + div, .paragraph-xl ~ div:not(.paragraph-xl)');
-    const nameText = nameDiv ? nameDiv.textContent.trim() : '';
     const roleText = roleDiv && !roleDiv.querySelector('strong') ? roleDiv.textContent.trim() : '';
-
-    if (nameText) {
-      contentFrag.appendChild(document.createComment(' field:content_heading '));
-      const h3 = document.createElement('h3');
-      h3.textContent = nameText;
-      contentFrag.appendChild(h3);
+    const quote = pane.querySelector('p.paragraph-xl');
+    if (roleText || quote) {
+      contentFrag.appendChild(document.createComment(' field:content_richtext '));
       if (roleText) {
         const roleP = document.createElement('p');
         roleP.textContent = roleText;
         contentFrag.appendChild(roleP);
       }
-    }
-
-    // content_richtext: testimonial quote
-    const quote = pane.querySelector('p.paragraph-xl');
-    if (quote) {
-      contentFrag.appendChild(document.createComment(' field:content_richtext '));
-      contentFrag.appendChild(quote);
+      if (quote) {
+        contentFrag.appendChild(quote);
+      }
     }
 
     cells.push([titleFrag, contentFrag]);

@@ -1,10 +1,8 @@
+/* Columns Article - image left, article meta right */
 .columns-article > div {
   display: flex;
   flex-direction: column;
-}
-
-.columns-article img {
-  width: 100%;
+  gap: var(--spacing-xl);
 }
 
 .columns-article > div > div {
@@ -15,19 +13,37 @@
   order: 0;
 }
 
-.columns-article > div > .columns-article-img-col img {
+.columns-article img {
+  width: 100%;
   display: block;
+  border-radius: var(--border-radius-l);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Article meta column */
+.columns-article h2 {
+  margin-top: var(--spacing-m);
+}
+
+.columns-article p {
+  font-size: var(--body-font-size-xs);
+  color: var(--text-color-muted);
 }
 
 @media (width >= 900px) {
   .columns-article > div {
+    flex-direction: row;
     align-items: center;
-    flex-direction: unset;
-    gap: 24px;
+    gap: var(--spacing-xxl);
   }
 
   .columns-article > div > div {
     flex: 1;
     order: unset;
+  }
+
+  .columns-article img {
+    aspect-ratio: 3 / 4;
   }
 }

@@ -1,27 +1,65 @@
+/* Cards Article - article cards with image, tag, date, heading */
 .cards-article > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-l);
 }
 
 .cards-article > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  border: none;
+  background: none;
+  border-radius: var(--border-radius-l);
+  overflow: hidden;
+  transition: transform 0.2s ease;
 }
 
-.cards-article .cards-article-card-body {
-  margin: 16px;
+.cards-article > ul > li:hover {
+  transform: translateY(-4px);
 }
 
 .cards-article .cards-article-card-image {
   line-height: 0;
+  overflow: hidden;
+  border-radius: var(--border-radius-l);
 }
 
 .cards-article > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
+  border-radius: var(--border-radius-l);
+}
+
+.cards-article .cards-article-card-body {
+  margin: var(--spacing-m) 0 0;
+  padding: 0;
+}
+
+.cards-article .cards-article-card-body p {
+  margin: 0;
+  font-size: var(--body-font-size-xs);
+  color: var(--text-color-muted);
+}
+
+.cards-article .cards-article-card-body h3 {
+  margin-top: var(--spacing-xs);
+  margin-bottom: 0;
+}
+
+.cards-article .cards-article-card-body h3 a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.cards-article .cards-article-card-body h3 a:hover {
+  text-decoration: underline;
+}
+
+@media (width >= 900px) {
+  .cards-article > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
