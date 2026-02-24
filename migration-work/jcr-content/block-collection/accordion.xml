@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content cq:template="/libs/core/franklin/templates/page" sling:resourceType="core/franklin/components/page/v1/page" jcr:primaryType="cq:PageContent">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/root/v1/root">
+      <section sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" filter="accordion" name="Accordion">
+          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Accordion Item" model="accordion-item" summary="Lorem ipsum dolor sit amet, paulo scripta perfecto an duo?" text="&lt;p&gt;Aliquando sadipscing eum ea, aliquid postulant qui in. Option  &lt;strong&gt;vulputate&lt;/strong&gt;  an ius, everti  &lt;em&gt;efficiendi&lt;/em&gt; ex qui, inimicus liberavisse reprehendunt sit ei.&lt;/p&gt;" modelFields="[summary,text]"></item_0>
+          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Accordion Item" model="accordion-item" summary="Pri id veniam persequeris reprehendunt?" text="&lt;p&gt;Vocibus pericula temporibus id has, no quo omnium dolorem fuisset, ne quot brute gubergren per.&lt;/p&gt;&lt;p&gt;Cu errem fastidii maiestatis sed, mel at delectus erroribus. Mea porro postea nominavi at, sumo populo vix id. Vel at apeirian evertitur.&lt;/p&gt;" modelFields="[summary,text]"></item_1>
+          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Accordion Item" model="accordion-item" summary="Stet ponderum ne nec?" text="&lt;p&gt;Te errem impedit vel.&lt;/p&gt;" modelFields="[summary,text]"></item_2>
+        </block>
+      </section>
+    </root>
+  </jcr:content>
+</jcr:root>

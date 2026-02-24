@@ -1,0 +1,128 @@
+{
+  "url": "https://wknd-trendsetters.site/",
+  "sections": [
+    {
+      "id": "section-1",
+      "name": "Hero",
+      "selector": "header.section.secondary-section",
+      "style": "secondary",
+      "contentSequences": [
+        {
+          "id": "s1-seq1",
+          "description": "Large H1 heading 'Fresh looks, bold stories, real life', subheading paragraph about style adventures, two CTA buttons ('See case' primary, 'All stories' secondary)"
+        },
+        {
+          "id": "s1-seq2",
+          "description": "Grid of 3 images (hip-hop dance, family vacation, music concert) displayed in a compact grid layout"
+        }
+      ],
+      "notes": "Two-column grid layout (text left, images right). Secondary/light background."
+    },
+    {
+      "id": "section-2",
+      "name": "Featured Article",
+      "selector": "main > section.section:nth-of-type(1)",
+      "style": null,
+      "contentSequences": [
+        {
+          "id": "s2-seq1",
+          "description": "Large landscape image on the left side (adventure spots)"
+        },
+        {
+          "id": "s2-seq2",
+          "description": "Breadcrumb trail (Home > Case studies), H2 heading 'Fresh looks, bold moves, real stories', author name (Taylor Brooks), date (June 12, 2024), read time (4 min read)"
+        }
+      ],
+      "notes": "Two-column grid layout (image left, text right). Light background."
+    },
+    {
+      "id": "section-3",
+      "name": "Image Gallery",
+      "selector": "main > section.section.secondary-section:nth-of-type(1)",
+      "style": "secondary",
+      "contentSequences": [
+        {
+          "id": "s3-seq1",
+          "description": "Centered H2 heading 'Style in every snapshot' with subtitle paragraph 'Peek the latest looks in action'"
+        },
+        {
+          "id": "s3-seq2",
+          "description": "4-column by 2-row grid of 8 square images showing various lifestyle scenes (dance, beach, concert, campus, gaming, fashion, campus tour)"
+        }
+      ],
+      "notes": "Grey/secondary background. Images are square aspect ratio (1:1)."
+    },
+    {
+      "id": "section-4",
+      "name": "Testimonials",
+      "selector": "main > section.section:nth-of-type(2)",
+      "style": null,
+      "contentSequences": [
+        {
+          "id": "s4-seq1",
+          "description": "Tabbed content area with 4 panels, each showing: person image on left, name + title + testimonial quote on right. People: Alex Rivera (Streetwear Enthusiast), Taylor Kim (Casual Style Blogger), Jordan Ellis (Trend Spotter), Morgan Blake (Party Scene Curator). Tab menu below with avatar thumbnails and names for each person."
+        }
+      ],
+      "notes": "Light background. Interactive tabs with switchable content. Tab menu at bottom with avatar images."
+    },
+    {
+      "id": "section-5",
+      "name": "Latest Articles",
+      "selector": "main > section.section.secondary-section:nth-of-type(2)",
+      "style": "secondary",
+      "contentSequences": [
+        {
+          "id": "s5-seq1",
+          "description": "Centered H2 heading 'Latest articles' with subtitle 'Fresh looks, bold moves'"
+        },
+        {
+          "id": "s5-seq2",
+          "description": "4-column grid of article cards. Each card has: image, category tag (Casual Cool/Beach Vibes/Night Out/Sport Mode), date, and H3 heading. Cards link to blog posts."
+        }
+      ],
+      "notes": "Grey/secondary background. Cards are clickable article links."
+    },
+    {
+      "id": "section-6",
+      "name": "FAQ",
+      "selector": "main > section.section:nth-of-type(3)",
+      "style": null,
+      "contentSequences": [
+        {
+          "id": "s6-seq1",
+          "description": "H2 heading 'Got questions? We've got answers.' with subheading 'Fashion FAQs, answered fast' on the left side"
+        },
+        {
+          "id": "s6-seq2",
+          "description": "4 expandable FAQ items on the right side. Questions: 'How do I spot the latest trends?', 'Can I share my own outfit pics?', 'Where do you find your style inspo?', 'How can I join your community?'. Each has a collapsible answer."
+        }
+      ],
+      "notes": "Light background. Two-column layout (heading left, FAQ items right). Uses details/summary HTML elements."
+    },
+    {
+      "id": "section-7",
+      "name": "Bottom CTA",
+      "selector": "section.section.inverse-section",
+      "style": "inverse",
+      "contentSequences": [
+        {
+          "id": "s7-seq1",
+          "description": "Full-bleed background image (networking event) with dark overlay. H2 heading 'Fresh looks, bold stories, real life', subheading paragraph about case study, and 'See more' CTA button with inverse styling."
+        }
+      ],
+      "notes": "Dark/inverse background with image overlay. Single full-width content block."
+    }
+  ],
+  "blockInventory": {
+    "local": [
+      "accordion", "cards", "carousel", "columns", "embed", "footer",
+      "form", "fragment", "header", "hero", "modal", "quote",
+      "search", "table", "tabs", "video"
+    ],
+    "blockCollection": [
+      "tabs", "accordion", "cards", "carousel", "columns",
+      "embed", "hero", "search", "table", "video"
+    ],
+    "notes": "All Block Collection blocks already present locally. Rich block palette available."
+  }
+}
