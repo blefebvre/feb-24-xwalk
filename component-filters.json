@@ -52,6 +52,12 @@
     ]
   },
   {
+    "id": "cards-trend",
+    "components": [
+      "card"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content cq:template="/libs/core/franklin/templates/page" sling:resourceType="core/franklin/components/page/v1/page" jcr:primaryType="cq:PageContent" jcr:title="Top Fashion Trends for Young People | Fashion Blog" jcr:description="Discover the latest fashion trends, style tips, and stories for young trendsetters." modelFields="[jcr:title,jcr:description,keywords]">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/root/v1/root">
+      <section sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" style="[secondary]" model="section" modelFields="[name,style]">
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" image="https://www.wknd-trendsetters.site/images/mobile-game-character.avif" imageAlt="Trend style 1" model="hero-banner" modelFields="[image,imageAlt,text]" name="Hero Banner" text="&lt;p&gt;&lt;h1&gt;Fresh fits, bold moves — Trends for every vibe.&lt;/h1&gt;&lt;/p&gt;&lt;p&gt;From tennis whites to neon nights, we&#x27;re serving up the coolest outfits and the real stories behind them. Get inspired, get noticed, and make every day a runway.&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;#trends&quot;&gt;See trends&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/fashion-insights&quot;&gt;Explore the blog&lt;/a&gt;&lt;/p&gt;"></block>
+      </section>
+      <section_1 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Trend alert" titleType="h2"/>
+        <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;Fresh fits, bold moves&lt;/p&gt;"/>
+        <columns sling:resourceType="core/franklin/components/columns/v1/columns" jcr:primaryType="nt:unstructured" rows="1" columns="2">
+          <row1 jcr:primaryType="nt:unstructured">
+            <col1 jcr:primaryType="nt:unstructured">
+              <image sling:resourceType="core/franklin/components/image/v1/image" jcr:primaryType="nt:unstructured" image="https://www.wknd-trendsetters.site/images/networking-event.avif" imageAlt="Networking event"/>
+            </col1>
+            <col2 jcr:primaryType="nt:unstructured">
+              <button sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="/fashion-trends-young-adults" linkText="Explore young adult trends"/>
+            </col2>
+          </row1>
+        </columns>
+      </section_1>
+      <section_2 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" style="[secondary]" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Trends that turn heads" titleType="h2"/>
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" filter="cards-trend" name="Cards Trend">
+          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="https://www.wknd-trendsetters.site/images/season-trend-2.avif" text="&lt;p&gt;&lt;h3&gt;Street style&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Bold sneakers, vintage tees, and oversized hoodies—the sidewalk is your runway.&lt;/p&gt;"></item_0>
+          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="https://www.wknd-trendsetters.site/images/season-trend-3.avif" text="&lt;p&gt;&lt;h3&gt;Sporty vibes&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Track pants, crop tops, and fresh kicks—move easy and look sharp doing it.&lt;/p&gt;"></item_1>
+          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="https://www.wknd-trendsetters.site/images/season-trend-4.avif" text="&lt;p&gt;&lt;h3&gt;Night out&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Neon accents, metallics, and statement pieces—turn heads after dark.&lt;/p&gt;"></item_2>
+        </block>
+      </section_2>
+      <section_3 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Style in every snapshot" titleType="h2"/>
+        <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;Peek the latest looks in action&lt;/p&gt;"/>
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" filter="cards-gallery" name="Cards Gallery">
+          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="https://www.wknd-trendsetters.site/images/gallery-3.avif"></item_0>
+          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="https://www.wknd-trendsetters.site/images/gallery-4.avif"></item_1>
+          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="https://www.wknd-trendsetters.site/images/gallery-1.avif"></item_2>
+          <item_3 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="https://www.wknd-trendsetters.site/images/gallery-2.avif"></item_3>
+          <item_4 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="https://www.wknd-trendsetters.site/images/adventure-spots.avif"></item_4>
+          <item_5 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="https://www.wknd-trendsetters.site/images/gallery-6.avif"></item_5>
+        </block>
+      </section_3>
+      <section_4 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" style="[accent]" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Fresh looks, bold vibes, endless inspo" titleType="h2"/>
+        <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;Stay up to date with the latest trends and stories.&lt;/p&gt;"/>
+        <button sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="#" linkText="Join now"/>
+      </section_4>
+      <section_5 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]"></section_5>
+    </root>
+  </jcr:content>
+</jcr:root>

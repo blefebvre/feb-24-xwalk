@@ -1,0 +1,41 @@
+{
+    "pageName": "fashion-trends-of-the-season",
+    "originalUrl": "https://www.wknd-trendsetters.site/fashion-trends-of-the-season",
+    "migratedUrl": "http://localhost:3000/content/fashion-trends-of-the-season",
+    "migratedPath": "/fashion-trends-of-the-season",
+    "created": "2026-02-25T19:28:04.000Z",
+    "iterations": [],
+    "status": {
+        "original_collection_complete": true,
+        "migrated_collection_complete": true,
+        "analysis_complete": true
+    },
+    "collection_metadata": {
+        "original": {
+            "elements": 29,
+            "timestamp": "2026-02-25T19:35:00.000Z"
+        },
+        "migrated": {
+            "elements": 10,
+            "timestamp": "2026-02-25T21:15:00.000Z",
+            "actual_url": "http://localhost:3000/content/fashion-trends-of-the-season",
+            "screenshots": 9,
+            "skipped_below_min_size": 1,
+            "min_width": 400,
+            "min_height": 400,
+            "re_inspection": true
+        }
+    },
+    "analysis_results": {
+        "similarity": 0.58,
+        "grade": "Poor",
+        "matched_pairs": 10,
+        "total_differences": 9,
+        "css_fixes_count": 9,
+        "high_priority_fixes": 4,
+        "medium_priority_fixes": 3,
+        "low_priority_fixes": 2,
+        "content_migration_issues": 2,
+        "timestamp": "2026-02-25T20:00:00.000Z"
+    }
+}

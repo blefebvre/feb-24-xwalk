@@ -1,5 +1,5 @@
 {
-  "url": "https://wknd-trendsetters.site/",
+  "url": "https://www.wknd-trendsetters.site/fashion-trends-of-the-season",
   "sections": [
     {
       "id": "section-1",
@@ -10,158 +10,115 @@
       "sequences": [
         {
           "id": "s1-seq1",
-          "description": "H1 heading 'Fresh looks, bold stories, real life', subheading paragraph, two CTA buttons ('See case', 'All stories'), plus grid of 3 images",
+          "description": "Two-column layout: left column has H1 heading 'Fresh fits, bold moves — Trends for every vibe.', paragraph text, two CTA buttons ('See trends' primary, 'Explore the blog' secondary outline); right column has 3 images in a vertical grid",
           "decision": "block",
           "blockName": "hero-banner",
           "blockVariant": "hero-banner",
-          "reason": "Page intro with prominent heading, subheading, CTAs and images. Classic hero pattern at the top of page. Side-by-side layout (text left, images right) requires a hero variant."
+          "reason": "Page intro with heading, text, buttons, and images in two-column layout. Requires structured hero block. Reused existing variant (100% match)."
         }
       ]
     },
     {
       "id": "section-2",
-      "name": "Featured Article",
+      "name": "Trend Alert",
       "style": null,
       "sectionMetadata": false,
       "sequences": [
         {
           "id": "s2-seq1",
-          "description": "Two-column layout: large image on left, breadcrumb (Home > Case studies) + H2 heading + author (Taylor Brooks) + date (June 12, 2024) + read time on right",
+          "description": "Centered H2 heading 'Trend alert' with subtitle paragraph 'Fresh fits, bold moves'",
+          "decision": "default-content",
+          "reason": "Author can type a heading and paragraph normally. Centering is CSS."
+        },
+        {
+          "id": "s2-seq2",
+          "description": "Two-column layout: large image (3:2 aspect) on left, H3 heading 'Trendy looks, real moments' + paragraph + CTA button 'Explore young adult trends' on right",
           "decision": "block",
           "blockName": "columns-article",
           "blockVariant": "columns-article",
-          "reason": "Side-by-side content (image | article metadata) cannot be typed as default content. Obvious match with columns block."
+          "reason": "Side-by-side content (image | text+button) requires columns block structure. Reused existing variant (90% match)."
         }
       ]
     },
     {
       "id": "section-3",
-      "name": "Image Gallery",
+      "name": "Trends",
       "style": "secondary",
       "sectionMetadata": true,
       "sectionMetadataStyle": "secondary",
       "sequences": [
         {
           "id": "s3-seq1",
-          "description": "Centered H2 heading 'Style in every snapshot' with subtitle 'Peek the latest looks in action'",
+          "description": "Centered H2 heading 'Trends that turn heads'",
           "decision": "default-content",
-          "reason": "Author can type a heading and paragraph normally. Centering is CSS styling."
+          "reason": "Author can type a heading normally."
         },
         {
           "id": "s3-seq2",
-          "description": "4x2 grid of 8 square images (hip-hop dance, beach, concert, campus life, gaming, mobile game, fashion, campus tour)",
+          "description": "Grid of 3 items: each with image (3:2 aspect), H3 heading (Street style / Sporty vibes / Night out), and short description text",
           "decision": "block",
-          "blockName": "cards-gallery",
-          "blockVariant": "cards-gallery",
-          "reason": "Grid of structured image items requires block layout. Cards block with image-only content."
+          "blockName": "cards-trend",
+          "blockVariant": "cards-trend",
+          "reason": "Repeating structured pattern of items in a grid. New variant created (65% match with existing cards-article)."
         }
       ]
     },
     {
       "id": "section-4",
-      "name": "Testimonials",
+      "name": "Gallery",
       "style": null,
       "sectionMetadata": false,
       "sequences": [
         {
           "id": "s4-seq1",
-          "description": "Tabbed content with 4 panels. Each panel: person image + name + title + testimonial quote. Tab menu with avatar thumbnails. People: Alex Rivera (Streetwear Enthusiast), Taylor Kim (Casual Style Blogger), Jordan Ellis (Trend Spotter), Morgan Blake (Party Scene Curator).",
+          "description": "Centered H2 heading 'Style in every snapshot' with subtitle 'Peek the latest looks in action'",
+          "decision": "default-content",
+          "reason": "Author can type a heading and paragraph normally."
+        },
+        {
+          "id": "s4-seq2",
+          "description": "Grid of 6 square (1:1 aspect) images in 3 columns × 2 rows",
           "decision": "block",
-          "blockName": "tabs-testimonial",
-          "blockVariant": "tabs-testimonial",
-          "reason": "Interactive tabbed interface with switchable content panels. Obvious match with tabs block."
+          "blockName": "cards-gallery",
+          "blockVariant": "cards-gallery",
+          "reason": "Grid of image items requires block layout. Cards block with image-only content. Reused existing variant (75% match)."
         }
       ]
     },
     {
       "id": "section-5",
-      "name": "Latest Articles",
-      "style": "secondary",
+      "name": "Bottom CTA",
+      "style": "accent",
       "sectionMetadata": true,
-      "sectionMetadataStyle": "secondary",
+      "sectionMetadataStyle": "accent",
       "sequences": [
         {
           "id": "s5-seq1",
-          "description": "Centered H2 heading 'Latest articles' with subtitle 'Fresh looks, bold moves'",
+          "description": "Centered H2 heading 'Fresh looks, bold vibes, endless inspo', paragraph 'Stay up to date with the latest trends and stories.', CTA button 'Join now'",
           "decision": "default-content",
-          "reason": "Author can type a heading and paragraph normally."
-        },
-        {
-          "id": "s5-seq2",
-          "description": "4-column grid of article cards. Each card: image, category tag, date, H3 heading. Cards link to blog posts.",
-          "decision": "block",
-          "blockName": "cards-article",
-          "blockVariant": "cards-article",
-          "reason": "Repeating structured pattern of article cards in a grid. Obvious match with cards block."
-        }
-      ]
-    },
-    {
-      "id": "section-6",
-      "name": "FAQ",
-      "style": null,
-      "sectionMetadata": false,
-      "sequences": [
-        {
-          "id": "s6-seq1",
-          "description": "H2 heading 'Got questions? We've got answers.' with subheading 'Fashion FAQs, answered fast'",
-          "decision": "default-content",
-          "reason": "Author can type a heading and paragraph normally."
-        },
-        {
-          "id": "s6-seq2",
-          "description": "4 expandable FAQ items: 'How do I spot the latest trends?', 'Can I share my own outfit pics?', 'Where do you find your style inspo?', 'How can I join your community?'",
-          "decision": "block",
-          "blockName": "accordion-faq",
-          "blockVariant": "accordion-faq",
-          "reason": "Expandable Q&A sections need interactive decoration. Obvious match with accordion block."
-        }
-      ]
-    },
-    {
-      "id": "section-7",
-      "name": "Bottom CTA",
-      "style": "inverse",
-      "sectionMetadata": false,
-      "sectionMetadataNote": "Skipped: hero block has intrinsic background image overlay. Full-bleed, edge-to-edge design is block-specific, not section styling.",
-      "sequences": [
-        {
-          "id": "s7-seq1",
-          "description": "Full-bleed background image (networking event) with dark overlay. H2 heading 'Fresh looks, bold stories, real life', subheading paragraph, 'See more' CTA button.",
-          "decision": "block",
-          "blockName": "hero-cta",
-          "blockVariant": "hero-cta",
-          "reason": "Hero block with background image + text overlay + CTA. Matches standard hero structure (background image row + content row)."
+          "reason": "Author can type heading, paragraph, and link normally. Yellow background handled by section-metadata style=accent."
         }
       ]
     }
   ],
   "blockStructures": {
     "hero": {
-      "structure": "1 column, 3 rows. Row 1: block name. Row 2: background image (optional). Row 3: title + subheading + CTA.",
-      "source": "xwalk Block Collection"
+      "structure": "1 row with 1 column: image, heading, paragraph(s). For two-column variant: heading+text+buttons on one side, images on the other.",
+      "source": "Block Collection"
     },
     "columns": {
-      "structure": "Multiple columns per row. Row 1: block name. Row 2+: content cells side by side.",
-      "source": "xwalk Block Collection"
+      "structure": "2 columns per row. Each column contains content (text, images, links). Row 1: col1 + col2 side by side.",
+      "source": "Block Collection"
     },
     "cards": {
-      "structure": "2 columns per row. Row 1: block name. Each subsequent row: image cell + text cell (title, description, CTA).",
-      "source": "xwalk Block Collection"
-    },
-    "tabs": {
-      "structure": "2 columns per row. Row 1: block name. Each subsequent row: tab label + tab content.",
-      "source": "xwalk Block Collection"
-    },
-    "accordion": {
-      "structure": "2 columns per row. Row 1: block name. Each subsequent row: question title + answer content.",
-      "source": "xwalk Block Collection"
+      "structure": "Each card = 1 row with 2 columns: image cell | text cell (heading + paragraph). For image-only cards: 1 column with just images.",
+      "source": "Block Collection"
     }
   },
   "summary": {
-    "totalSections": 7,
-    "blocksUsed": ["hero-banner", "hero-cta", "columns-article", "cards-gallery", "cards-article", "tabs-testimonial", "accordion-faq"],
-    "defaultContentSections": ["s3-seq1", "s5-seq1", "s6-seq1"],
+    "totalSections": 5,
+    "blocksUsed": ["hero-banner", "columns-article", "cards-trend", "cards-gallery"],
+    "defaultContentSequences": ["s2-seq1", "s3-seq1", "s4-seq1", "s5-seq1"],
     "sectionsWithMetadata": ["section-1", "section-3", "section-5"]
   }
 }

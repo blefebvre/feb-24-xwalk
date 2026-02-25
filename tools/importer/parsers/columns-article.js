@@ -20,14 +20,11 @@ export default function parse(element, { document }) {
 
   const col2Frag = document.createDocumentFragment();
   if (col2Div) {
-    // Extract breadcrumbs, heading, author info
-    const breadcrumbs = col2Div.querySelector('.breadcrumbs');
-    const heading = col2Div.querySelector('h2, h1');
-    const authorInfo = col2Div.querySelector(':scope > div:last-child');
-
-    if (breadcrumbs) col2Frag.appendChild(breadcrumbs);
-    if (heading) col2Frag.appendChild(heading);
-    if (authorInfo) col2Frag.appendChild(authorInfo);
+    // Extract all meaningful content: headings, paragraphs, buttons, breadcrumbs, author info
+    const children = Array.from(col2Div.children);
+    children.forEach((child) => {
+      col2Frag.appendChild(child);
+    });
   }
 
   // Columns: one row with N columns (no field hints needed)

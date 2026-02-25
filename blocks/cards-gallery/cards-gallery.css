@@ -15,8 +15,16 @@
   border-radius: var(--border-radius-l);
 }
 
-.cards-gallery .cards-gallery-card-body {
+.cards-gallery .cards-gallery-card-body:last-child {
   display: none;
+}
+
+.cards-gallery .cards-gallery-card-body:first-child {
+  line-height: 0;
+}
+
+.cards-gallery .cards-gallery-card-body:first-child p {
+  margin: 0;
 }
 
 .cards-gallery .cards-gallery-card-image {

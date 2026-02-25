@@ -1,48 +1,44 @@
 {
-  "url": "https://wknd-trendsetters.site/",
-  "timestamp": "2026-02-24T14:49:52.159Z",
+  "url": "https://www.wknd-trendsetters.site/fashion-trends-of-the-season",
+  "timestamp": "2026-02-25T19:04:23.062Z",
   "paths": {
-    "documentPath": "content/index",
-    "htmlFilePath": "content/index.plain.html",
-    "mdFilePath": "content/index.md",
-    "dirPath": "content",
-    "filename": "index",
-    "previewPath": "/content/index"
+    "documentPath": "/fashion-trends-of-the-season",
+    "htmlFilePath": "content/fashion-trends-of-the-season.plain.html",
+    "mdFilePath": "content/fashion-trends-of-the-season.md",
+    "previewPath": "/content/fashion-trends-of-the-season",
+    "dirPath": "",
+    "filename": "fashion-trends-of-the-season"
   },
-  "screenshot": "/workspace/repos/migration-work/screenshot.png",
+  "screenshot": "migration-work/screenshot.png",
   "html": {
-    "filePath": "/workspace/repos/migration-work/cleaned.html",
-    "size": 31961
+    "filePath": "migration-work/cleaned.html",
+    "size": 22191
   },
   "metadata": {
-    "title": "WKND Trendsetters - Fresh Looks, Bold Stories, Real Life",
+    "title": "Top Fashion Trends for Young People | Fashion Blog",
     "viewport": "width=device-width, initial-scale=1",
     "description": "Discover the latest fashion trends, style tips, and stories for young trendsetters."
   },
   "images": {
-    "count": 17,
+    "count": 13,
     "mapping": {
-      "https://wknd-trendsetters.site/images/hero-hiphop-dance.avif": "./images/6c924b59609cecebaac06a72640f7c0b.png",
-      "https://wknd-trendsetters.site/images/hero-family-vacation.avif": "./images/dc6fb94be3b0e50af2580821321a923f.png",
-      "https://wknd-trendsetters.site/images/adventure-spots.avif": "./images/f993033b898c64cf18ba74305fdd3717.png",
-      "https://wknd-trendsetters.site/images/campus-tour.avif": "./images/98526dd1e90095edd23771e7a7dd8b0c.png",
-      "https://wknd-trendsetters.site/images/fashion-inspiration.avif": "./images/2d6198db52d294c497e2733baed975f7.png",
-      "https://wknd-trendsetters.site/images/beach-destination.avif": "./images/b6081d814df7f0002a47200541dbca9a.png",
-      "https://wknd-trendsetters.site/images/mobile-game-character.avif": "./images/a60ae4eaeca56cd7ee02642c811ff64e.png",
-      "https://wknd-trendsetters.site/images/concert-crowd.avif": "./images/85e1642f2a29e0ed4358eab4388c24cd.png",
-      "https://wknd-trendsetters.site/images/avatar-alex.avif": "./images/9fc227a4862ba4ee2d6b4eb335ad7ba7.png",
-      "https://wknd-trendsetters.site/images/avatar-jordan.avif": "./images/71234105b43dd9cc550c7bef4c3f49a9.png",
-      "https://wknd-trendsetters.site/images/avatar-morgan.avif": "./images/06c128563353931a1b0086f526eaccae.png",
-      "https://wknd-trendsetters.site/images/fundraising-event.avif": "./images/c7b76a8d68d163577d3a5559cd292462.png",
-      "https://wknd-trendsetters.site/images/hero-music-concert.avif": "./images/6dab8a840c69b3c4f2a1ba48617b64b1.png",
-      "https://wknd-trendsetters.site/images/networking-event.avif": "./images/93d01b360166dd809a69f64e79e7a6e0.png",
-      "https://wknd-trendsetters.site/images/avatar-taylor.avif": "./images/f1c5ff7b7cccd42b32cd286a28d99c20.png",
-      "https://wknd-trendsetters.site/images/campus-life.avif": "./images/8b38c1400d8f8a11b7dd3424a35beafc.png",
-      "https://wknd-trendsetters.site/images/gaming-tournaments.avif": "./images/4cbe7c6c574bc27554f027cacda2f2e9.png"
+      "https://www.wknd-trendsetters.site/images/mobile-game-character.avif": "./images/7418baa8ced4254aec01ba327f9b852c.png",
+      "https://www.wknd-trendsetters.site/images/adventure-spots.avif": "./images/c48bc14242bdb964915adcf8fb1fd7a9.png",
+      "https://www.wknd-trendsetters.site/images/hero-family-vacation.avif": "./images/a112120fb62f38534232e6c6458eb3ef.png",
+      "https://www.wknd-trendsetters.site/images/season-trend-1.avif": "./images/33e847210e1ff4b21f4bd9a0c72da2df.png",
+      "https://www.wknd-trendsetters.site/images/networking-event.avif": "./images/cfd3a9aacf317da32ad522ae00775a6a.png",
+      "https://www.wknd-trendsetters.site/images/season-trend-3.avif": "./images/0f391cadaf95fae9d416d33e9ab2cffd.png",
+      "https://www.wknd-trendsetters.site/images/season-trend-2.avif": "./images/f7db0f72bdc34a55ef00bdc30144d5d6.png",
+      "https://www.wknd-trendsetters.site/images/gallery-6.avif": "./images/a9132d4971082ed896a9b62702630bde.png",
+      "https://www.wknd-trendsetters.site/images/season-trend-4.avif": "./images/61a96cf5d9028ee06d4c51344075880f.png",
+      "https://www.wknd-trendsetters.site/images/gallery-4.avif": "./images/7c75d8b3d265e5eea8e8004b3c99a173.png",
+      "https://www.wknd-trendsetters.site/images/gallery-2.avif": "./images/c67664768c041eae92129b126b0d9e0c.png",
+      "https://www.wknd-trendsetters.site/images/gallery-1.avif": "./images/3c88c49513234726117d4ac22b6bbfea.png",
+      "https://www.wknd-trendsetters.site/images/gallery-3.avif": "./images/abeb78219fc107f61573d2b5fe457b90.png"
     },
     "stats": {
-      "total": 17,
-      "converted": 17,
+      "total": 13,
+      "converted": 13,
       "skipped": 0,
       "failed": 0,
       "tooLarge": 0,

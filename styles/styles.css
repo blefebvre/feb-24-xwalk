@@ -358,8 +358,15 @@ main .section.inverse a.button:hover {
   background-color: var(--light-color);
 }
 
+/* accent section */
+main .section.accent {
+  background-color: var(--accent-color);
+}
+
 /* centered default content within sections */
-main > .section.secondary > div > h2,
-main > .section.secondary > div > p {
+main > .section.secondary > .default-content-wrapper,
+main > .section.accent > .default-content-wrapper,
+main > .section.columns-article-container > .default-content-wrapper,
+main > .section.cards-gallery-container > .default-content-wrapper {
   text-align: center;
 }

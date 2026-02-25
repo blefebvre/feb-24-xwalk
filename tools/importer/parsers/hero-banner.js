@@ -16,15 +16,19 @@ export default function parse(element, { document }) {
 
   // Images are in the second direct child div (grid of images)
   const imageGrid = element.querySelector(':scope > div:nth-child(2)');
-  const image = imageGrid ? imageGrid.querySelector('img') : element.querySelector('img');
+  const images = imageGrid ? Array.from(imageGrid.querySelectorAll('img')) : [];
+  if (images.length === 0) {
+    const fallback = element.querySelector('img');
+    if (fallback) images.push(fallback);
+  }
 
   const cells = [];
 
-  // Row 1: image field (single reference)
-  if (image) {
+  // Row 1: image field (first image gets field hint, all images included for display)
+  if (images.length > 0) {
     const imageFrag = document.createDocumentFragment();
     imageFrag.appendChild(document.createComment(' field:image '));
-    imageFrag.appendChild(image);
+    images.forEach((img) => imageFrag.appendChild(img));
     cells.push([imageFrag]);
   }
 

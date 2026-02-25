@@ -49,6 +49,13 @@
   height: auto;
 }
 
+/* Text row (second row) — override grid back to flex for single-cell rows */
+.hero-banner > div:last-child > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-l);
+}
+
 @media (width >= 900px) {
   .hero-banner > div {
     flex-direction: row;
